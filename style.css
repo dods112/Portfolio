@@ -2363,3 +2363,131 @@ body::before,
 body::after {
     pointer-events: none !important;
 }
+
+/* ========== MOBILE POLISH (phones under 600px) ========== */
+@media (max-width: 600px) {
+
+    /* Navbar: compact floating bar */
+    .navbar {
+        top: 12px;
+        width: calc(100% - 24px);
+        padding: 8px 10px;
+        border-radius: 14px;
+    }
+    .brand-name { display: none; }
+    .brand-mark { width: 32px; height: 32px; font-size: 0.75rem; }
+
+    /* Hero name: smaller, cropped less, sits above the photo */
+    .big-name {
+        top: 34%;
+        font-size: 3.4rem;
+        letter-spacing: -0.02em;
+    }
+
+    /* Photo: shorter so it doesn't cover the text */
+    .portrait {
+        bottom: 96px;
+    }
+    .portrait img {
+        height: 58vh;
+    }
+
+    /* Role text: sits in a clear strip under the photo */
+    .intro-meta {
+        left: 20px;
+        right: 20px;
+        bottom: 28px;
+    }
+    .role {
+        font-size: 0.95rem;
+    }
+    .role-sub {
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
+
+    /* Remove clutter on small screens */
+    .scroll-cue,
+    .w-count,
+    .w-grid,
+    .w-frame,
+    .w-scan {
+        display: none !important;
+    }
+
+    /* Sections: tighter spacing */
+    .section {
+        padding: 70px 20px;
+    }
+    .section-head {
+        margin-bottom: 36px;
+    }
+    .section-head h2,
+    .skills-intro h2 {
+        font-size: 2rem;
+    }
+
+    /* About */
+    .about-top {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin-bottom: 36px;
+    }
+    .avatar {
+        width: 96px;
+        height: 96px;
+        max-width: 96px;
+    }
+    .stats-row {
+        gap: 18px;
+    }
+    .stats-row strong {
+        font-size: 1.4rem;
+    }
+    .currently {
+        gap: 22px;
+    }
+
+    /* Skills: 4-column icon grid, cards stack */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .icon-grid {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: none;
+        gap: 10px;
+    }
+    .tech {
+        font-size: 0.75rem;
+    }
+    .cap-card {
+        padding: 22px;
+    }
+
+    /* Projects: carousel keeps swipe, cards fit the width */
+    .car-stage {
+        height: 460px;
+    }
+    .car-item {
+        width: 86vw;
+    }
+
+    /* Contact */
+    .contact {
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+    .contact-big {
+        font-size: 2.6rem;
+    }
+    .info-card {
+        padding: 14px 16px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 28px 20px;
+        font-size: 0.8rem;
+    }
+}
