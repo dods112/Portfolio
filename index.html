@@ -425,8 +425,11 @@ if (fine && !reduceMotion) {
     render();
 })();
 
-// ---------- Page-by-page (no visible scrolling) ----------
+// ---------- Page-by-page (desktop only, phones scroll normally) ----------
 (() => {
+    const desktop = window.matchMedia('(min-width: 769px) and (hover: hover) and (pointer: fine)').matches;
+    if (!desktop) return;
+
     const pages = Array.from(document.querySelectorAll('.intro, main > section, .footer'));
     let current = 0;
     let busy = false;
@@ -443,7 +446,7 @@ if (fine && !reduceMotion) {
         index = Math.max(0, Math.min(pages.length - 1, index));
         current = index;
         const top = pages[index].getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({ top, behavior: 'instant' });
+        window.scrollTo({ top, behavior: 'auto' });
     };
 
     const step = (dir) => {
@@ -470,20 +473,15 @@ if (fine && !reduceMotion) {
         if (['ArrowUp', 'PageUp'].includes(e.key)) { e.preventDefault(); step(-1); }
     });
 
-    let startY = 0;
-    window.addEventListener('touchstart', (e) => {
-        if (isInput(e.target)) return;
-        startY = e.touches[0].clientY;
-    }, { passive: true });
-    window.addEventListener('touchmove', (e) => {
-        if (isInput(e.target)) return;
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+        const target = document.getElementById(link.getAttribute('href').slice(1));
+        if (!target) return;
         e.preventDefault();
-    }, { passive: false });
-    window.addEventListener('touchend', (e) => {
-        if (isInput(e.target)) return;
-        const dy = startY - e.changedTouches[0].clientY;
-        if (Math.abs(dy) > 50) step(dy > 0 ? 1 : -1);
-    }, { passive: true });
+        const idx = pages.indexOf(target.closest('section, footer') || target);
+        if (idx !== -1) jumpTo(idx);
+    });
 })();
 
 // ---------- Hire Me popup ----------

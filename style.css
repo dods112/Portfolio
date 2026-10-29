@@ -2491,3 +2491,173 @@ body::after {
         font-size: 0.8rem;
     }
 }
+/* ========== MOBILE: NORMAL SCROLLING ========== */
+@media (max-width: 768px), (hover: none), (pointer: coarse) {
+    html,
+    body {
+        height: auto !important;
+        min-height: 100%;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        touch-action: pan-y;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    html::-webkit-scrollbar {
+        display: auto;
+    }
+}
+
+/* ========== CONTACT: MOBILE STACK FIX ========== */
+@media (max-width: 768px) {
+    .contact {
+        min-height: auto;
+        display: block;
+        padding: 90px 20px 50px;
+    }
+
+    .contact-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+        grid-template-columns: none;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contact-big {
+        font-size: 2.6rem;
+        margin: 10px 0 14px;
+    }
+
+    .contact-left .lead {
+        max-width: none;
+        font-size: 0.95rem;
+    }
+
+    .contact-right {
+        gap: 0;
+    }
+
+    .info-stack {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .info-card {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        padding: 14px 16px;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .info-card > div {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .info-card strong {
+        display: block;
+        font-size: 0.9rem;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .info-card .label {
+        font-size: 0.6rem;
+    }
+
+    .info-card .info-icon {
+        width: 34px;
+        height: 34px;
+        flex-shrink: 0;
+    }
+}
+
+/* ========== WHAT I CAN DO: MOBILE FIX ========== */
+@media (max-width: 768px) {
+
+    /* Hide the corner frame so it doesn't overlap text */
+    body::after {
+        display: none;
+    }
+
+    /* Skills layout */
+    .skills-page {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    .skills-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    .skills-intro h2 {
+        font-size: 2.2rem;
+    }
+
+    /* Icon tiles: shorter, not tall squares */
+    .icon-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        max-width: none;
+    }
+    .tech {
+        aspect-ratio: auto;
+        height: 58px;
+        border-radius: 14px;
+        font-size: 0.8rem;
+    }
+
+    /* Capability cards */
+    .skills-page .cap-card,
+    .cap-card {
+        padding: 22px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .cap-top {
+        margin-bottom: 16px;
+    }
+    .cap-num {
+        font-size: 2rem;
+    }
+    .cap-card p {
+        font-size: 0.9rem;
+        line-height: 1.55;
+    }
+    .cap-tags span {
+        font-size: 0.62rem;
+        padding: 4px 7px;
+    }
+}
+/* ========== WHAT I CAN DO: MOBILE POLISH 2 ========== */
+@media (max-width: 768px) {
+    .skills-page {
+        padding-top: 70px;
+    }
+
+    .skills-page .cap-tags {
+        gap: 5px;
+    }
+    .skills-page .cap-tags span {
+        font-size: 0.58rem;
+        padding: 4px 6px;
+        letter-spacing: 0;
+        border-radius: 5px;
+    }
+
+    .skills-page .cap-card p {
+        margin-bottom: 16px;
+    }
+}
