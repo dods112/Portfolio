@@ -13,24 +13,28 @@
 <body>
 
     <!-- ========== WELCOME SCREEN ========== -->
-<div class="welcome" id="welcome" aria-hidden="true">
-    <div class="welcome-inner">
-       <div class="bat-logo" aria-label="Batman logo" role="img">
-    <svg viewBox="0 0 300 163" xmlns="http://www.w3.org/2000/svg">
-        <path class="bat-outer" pathLength="1" d="M131.5.7c-43.6 5.5-60.5 9.9-84 21.8-16.2 8.2-29.5 19.1-38 31C4.4 60.7 0 73.6 0 81.6c0 6 3.7 18.6 7.3 24.4 8.9 14.7 24.4 27.5 44.2 36.5 12.5 5.7 13.6 6.1 20.5 8.3 43.9 13.9 95.4 15.6 139.5 4.6 31.7-8 55.7-20.4 71.5-37.1 8.5-9 12.7-16.2 15.4-26.9 2.3-8.8 2-14.1-1.3-23.8-9.2-27.1-39.5-48.3-85.6-59.9-22.7-5.8-62.6-9.2-80-7zM167 6.4c28.5 1.1 59.4 8.7 83 20.6 9.4 4.7 11.5 6.1 21.5 14.2 17.2 13.7 25.4 32.9 21.2 49.5-2.4 9.4-5.3 14.6-12.6 23-21 24.2-65.5 40.7-116.7 43.2-74.9 3.7-141.3-22.8-155-61.8C-3.2 62.2 28.9 28.4 86 13.5c19-5 49-8.7 63.5-7.8 2.2.1 10.1.5 17.5.7z" />
-        <path class="bat-line" pathLength="1" d="M134.6 15.2c-.2 1.3-.9 7.4-1.5 13.6-1.1 12.3-3 17.7-8 23.4-4.3 4.9-7.8 6.2-16 5.6-4.9-.4-8.2-1.3-12-3.4-12.7-6.9-14.2-17.3-4.4-30.5 2.3-3.3 4.3-6.1 4.3-6.3 0-1.6-32.4 9.6-42.5 14.7C38 40.6 22 54.5 16.5 65.5c-2.7 5.3-3 7-3 15.1 0 8.5.2 9.5 3.9 16.9 4.9 9.8 16.7 22.2 27.2 28.4 8.3 4.9 25.4 12.5 30.3 13.6l3.5.7-4.2-4.7c-9-10.2-13.5-25.1-9.8-32.2C67.1 98 70.5 96 77.1 96c7.1 0 14.5 3 22.7 9.3 3.1 2.3 6.3 4.6 7 5.1.9.5 2.7-.8 5.6-3.8 4.9-5.3 7.6-5.8 12.7-2.3 4.7 3.1 9.5 9.9 17.5 24.3 3.8 6.8 7.1 12 7.5 11.6.3-.4 2.1-3.4 3.9-6.7 10.4-19.3 16.1-27.5 21-30 4.8-2.5 7-1.8 11.8 3.2 3.1 3.2 4.9 4.3 5.7 3.7.7-.5 3.4-2.6 6.1-4.6 7.7-5.9 15.1-9.1 21.9-9.5 7.1-.4 10 .8 13.3 5.7 4.8 7.1 1.4 20.5-8.2 32.4l-4.8 5.8 3.4-.7c4.9-1.1 22.1-8.8 29.7-13.4 13.3-8.1 21.3-16.3 27.8-28.6 3.7-6.8 3.8-7.4 3.8-17 0-9.5-.2-10.3-3.4-15.9-7.4-12.8-22.1-25.1-40.4-33.6-9.7-4.5-29.4-11.4-35.6-12.5l-4.4-.7 3.5 4.3c7.1 8.8 9.1 15.9 6.4 22.4-2.2 5.3-4.2 7.3-10.1 10.2-5.2 2.7-15.1 4.1-19.9 2.9-4.1-1-9.2-6.2-12.1-12.3-2.1-4.6-2.9-8.1-3.7-18.2-.6-7-1.4-13-1.9-13.5-.4-.5-1.8 1.2-3 3.8l-2.3 4.6H140.3l-1.8-4c-2.3-5-3.3-5.8-3.9-2.8z" />
-    </svg>
-</div>
-        <span class="welcome-line">HELLO, I'M</span>
-        <span class="welcome-name">MERL REX</span>
-        <span class="welcome-sub">Full-stack web developer</span>
-        <span class="welcome-bar"></span>
+    <div class="welcome" id="welcome" aria-hidden="true">
+        <div class="w-grid"></div>
+        <div class="w-frame"></div>
+        <div class="w-scan"></div>
+        <span class="w-count">000</span>
+
+        <div class="welcome-inner">
+            <div class="bat-logo" role="img" aria-label="Batman logo">
+                <svg viewBox="0 0 300 163" xmlns="http://www.w3.org/2000/svg">
+                    <path class="bat-outer" pathLength="1" d="M131.5.7c-43.6 5.5-60.5 9.9-84 21.8-16.2 8.2-29.5 19.1-38 31C4.4 60.7 0 73.6 0 81.6c0 6 3.7 18.6 7.3 24.4 8.9 14.7 24.4 27.5 44.2 36.5 12.5 5.7 13.6 6.1 20.5 8.3 43.9 13.9 95.4 15.6 139.5 4.6 31.7-8 55.7-20.4 71.5-37.1 8.5-9 12.7-16.2 15.4-26.9 2.3-8.8 2-14.1-1.3-23.8-9.2-27.1-39.5-48.3-85.6-59.9-22.7-5.8-62.6-9.2-80-7zM167 6.4c28.5 1.1 59.4 8.7 83 20.6 9.4 4.7 11.5 6.1 21.5 14.2 17.2 13.7 25.4 32.9 21.2 49.5-2.4 9.4-5.3 14.6-12.6 23-21 24.2-65.5 40.7-116.7 43.2-74.9 3.7-141.3-22.8-155-61.8C-3.2 62.2 28.9 28.4 86 13.5c19-5 49-8.7 63.5-7.8 2.2.1 10.1.5 17.5.7z" />
+                    <path class="bat-line" pathLength="1" d="M134.6 15.2c-.2 1.3-.9 7.4-1.5 13.6-1.1 12.3-3 17.7-8 23.4-4.3 4.9-7.8 6.2-16 5.6-4.9-.4-8.2-1.3-12-3.4-12.7-6.9-14.2-17.3-4.4-30.5 2.3-3.3 4.3-6.1 4.3-6.3 0-1.6-32.4 9.6-42.5 14.7C38 40.6 22 54.5 16.5 65.5c-2.7 5.3-3 7-3 15.1 0 8.5.2 9.5 3.9 16.9 4.9 9.8 16.7 22.2 27.2 28.4 8.3 4.9 25.4 12.5 30.3 13.6l3.5.7-4.2-4.7c-9-10.2-13.5-25.1-9.8-32.2C67.1 98 70.5 96 77.1 96c7.1 0 14.5 3 22.7 9.3 3.1 2.3 6.3 4.6 7 5.1.9.5 2.7-.8 5.6-3.8 4.9-5.3 7.6-5.8 12.7-2.3 4.7 3.1 9.5 9.9 17.5 24.3 3.8 6.8 7.1 12 7.5 11.6.3-.4 2.1-3.4 3.9-6.7 10.4-19.3 16.1-27.5 21-30 4.8-2.5 7-1.8 11.8 3.2 3.1 3.2 4.9 4.3 5.7 3.7.7-.5 3.4-2.6 6.1-4.6 7.7-5.9 15.1-9.1 21.9-9.5 7.1-.4 10 .8 13.3 5.7 4.8 7.1 1.4 20.5-8.2 32.4l-4.8 5.8 3.4-.7c4.9-1.1 22.1-8.8 29.7-13.4 13.3-8.1 21.3-16.3 27.8-28.6 3.7-6.8 3.8-7.4 3.8-17 0-9.5-.2-10.3-3.4-15.9-7.4-12.8-22.1-25.1-40.4-33.6-9.7-4.5-29.4-11.4-35.6-12.5l-4.4-.7 3.5 4.3c7.1 8.8 9.1 15.9 6.4 22.4-2.2 5.3-4.2 7.3-10.1 10.2-5.2 2.7-15.1 4.1-19.9 2.9-4.1-1-9.2-6.2-12.1-12.3-2.1-4.6-2.9-8.1-3.7-18.2-.6-7-1.4-13-1.9-13.5-.4-.5-1.8 1.2-3 3.8l-2.3 4.6H140.3l-1.8-4c-2.3-5-3.3-5.8-3.9-2.8z" />
+                </svg>
+            </div>
+            <span class="welcome-line">HELLO, I'M</span>
+            <span class="welcome-name">MERL REX</span>
+            <span class="welcome-sub">Full-stack web developer</span>
+            <span class="welcome-bar"></span>
+        </div>
     </div>
-</div>
 
-
-    <!-- ========== HERO / NAVBAR ========== -->
-    <section id="home" class="intro">
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero2">
         <header class="navbar">
             <a href="#home" class="brand">
                 <span class="brand-mark">MD</span>
@@ -51,20 +55,27 @@
             </div>
         </header>
 
-        <div class="intro-stage">
-            <h1 class="big-name" aria-label="Merl Rex N. Dolohan">
-                <span class="big-name-track" aria-hidden="true">MERL REX N. DOLOHAN &nbsp;&nbsp;&nbsp; MERL REX N. DOLOHAN &nbsp;&nbsp;&nbsp;</span>
-            </h1>
-            <div class="portrait">
-                <img src="profile.jpg" alt="Merl Rex N. Dolohan, full-stack web developer">
+        <div class="hero2-bg-name" aria-hidden="true">
+            <span>MERL REX N. DOLOHAN &nbsp;&nbsp;&nbsp;&nbsp; MERL REX N. DOLOHAN &nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+
+        <div class="hero2-content">
+            <span class="hero2-eyebrow">Full-stack developer</span>
+            <h1 class="hero2-title">Hi, I'm <span class="hero2-grad">Merl Rex.</span></h1>
+            <p class="hero2-sub">I build digital experiences.</p>
+            <p class="hero2-desc">Web systems, databases, and AI-integrated applications for a smarter tomorrow.</p>
+            <div class="hero2-actions">
+                <a href="#projects" class="hero2-btn">View My Projects <span aria-hidden="true">→</span></a>
             </div>
-            <div class="intro-meta">
-                <p class="role">Full-stack web developer</p>
-                <p class="role-sub">Web systems · Databases · AI-integrated apps</p>
+            <div class="hero2-social">
+                <a href="https://github.com/dods112" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.facebook.com/rexdoss.31" target="_blank" rel="noopener">Facebook</a>
+                <a href="#contact">Contact</a>
             </div>
-            <a href="#about" class="scroll-cue" aria-label="Scroll down">
-                <span>  </span>
-            </a>
+        </div>
+
+        <div class="hero2-photo">
+            <img src="profile.jpg" alt="Merl Rex N. Dolohan, full-stack web developer">
         </div>
     </section>
 
@@ -112,7 +123,7 @@
             </div>
         </section>
 
-        <!-- ========== WHAT I CAN DO (ONE PAGE) ========== -->
+        <!-- ========== WHAT I CAN DO ========== -->
         <section id="skills" class="section skills-page">
             <div class="skills-grid">
                 <div class="skills-intro reveal">
@@ -121,26 +132,26 @@
                     <p class="skills-lead">I combine technical, problem-solving, and digital skills to build reliable systems, manage data, and support efficient digital workflows.</p>
 
                     <div class="icon-grid">
-                        <span class="tech" title="HTML5" style="--c:#e34f26">H5</span>
-                        <span class="tech" title="CSS3" style="--c:#1572b6">C3</span>
-                        <span class="tech" title="JavaScript" style="--c:#f7df1e">JS</span>
-                        <span class="tech" title="PHP" style="--c:#777bb4">PHP</span>
-                        <span class="tech" title="Laravel" style="--c:#ff2d20">Lv</span>
-                        <span class="tech" title="Python" style="--c:#3776ab">Py</span>
-                        <span class="tech" title="Flask" style="--c:#9aa0b4">Fk</span>
-                        <span class="tech" title="MySQL" style="--c:#00758f">My</span>
-                        <span class="tech" title="SQLite" style="--c:#44a8e0">SL</span>
-                        <span class="tech" title="Arduino" style="--c:#00878f">Ar</span>
-                        <span class="tech" title="Git" style="--c:#f05032">Git</span>
-                        <span class="tech" title="VS Code" style="--c:#007acc">VS</span>
-                        <span class="tech" title="Tailwind" style="--c:#38bdf8">TW</span>
-                        <span class="tech" title="Bootstrap" style="--c:#7952b3">BS</span>
-                        <span class="tech" title="Chart.js" style="--c:#ff6384">CJ</span>
-                        <span class="tech" title="Figma" style="--c:#a259ff">Fg</span>
+                        <span class="tech" title="HTML5" style="--c:#e34f26; --i:0">H5</span>
+                        <span class="tech" title="CSS3" style="--c:#1572b6; --i:1">C3</span>
+                        <span class="tech" title="JavaScript" style="--c:#f7df1e; --i:2">JS</span>
+                        <span class="tech" title="PHP" style="--c:#777bb4; --i:3">PHP</span>
+                        <span class="tech" title="Laravel" style="--c:#ff2d20; --i:4">Lv</span>
+                        <span class="tech" title="Python" style="--c:#3776ab; --i:5">Py</span>
+                        <span class="tech" title="Flask" style="--c:#9aa0b4; --i:6">Fk</span>
+                        <span class="tech" title="MySQL" style="--c:#00758f; --i:7">My</span>
+                        <span class="tech" title="SQLite" style="--c:#44a8e0; --i:8">SL</span>
+                        <span class="tech" title="Arduino" style="--c:#00878f; --i:9">Ar</span>
+                        <span class="tech" title="Git" style="--c:#f05032; --i:10">Git</span>
+                        <span class="tech" title="VS Code" style="--c:#007acc; --i:11">VS</span>
+                        <span class="tech" title="Tailwind" style="--c:#38bdf8; --i:12">TW</span>
+                        <span class="tech" title="Bootstrap" style="--c:#7952b3; --i:13">BS</span>
+                        <span class="tech" title="Chart.js" style="--c:#ff6384; --i:14">CJ</span>
+                        <span class="tech" title="Figma" style="--c:#a259ff; --i:15">Fg</span>
                     </div>
                 </div>
 
-                <article class="cap-card reveal" data-tilt>
+                <article class="cap-card reveal">
                     <div class="cap-top">
                         <span class="cap-num">01</span>
                         <span class="cap-label">Web Development<br>&amp; Systems</span>
@@ -151,7 +162,7 @@
                     </div>
                 </article>
 
-                <article class="cap-card reveal" data-tilt>
+                <article class="cap-card reveal">
                     <div class="cap-top">
                         <span class="cap-num">02</span>
                         <span class="cap-label">Operations<br>&amp; Workflows</span>
@@ -164,473 +175,349 @@
             </div>
         </section>
 
-       <!-- ========== WORK GALLERY (SWIPE CAROUSEL) ========== -->
-<section id="projects" class="section">
-    <div class="section-head work-head reveal">
-        <div>
-            <span class="eyebrow">03 / Selected work</span>
-            <h2>Work gallery</h2>
-        </div>
-        <a href="https://github.com/dods112" target="_blank" rel="noopener" class="btn outline">View more on GitHub ↗</a>
-    </div>
-
-    <div class="carousel">
-
-        <div class="car-stage" id="carStage">
-            <article class="project-card car-item">
-                <div class="project-img">
-                    <img src="ai_chat.png" alt="FinFlow AI chat interface" loading="lazy">
+        <!-- ========== WORK GALLERY ========== -->
+        <section id="projects" class="section">
+            <div class="section-head reveal">
+                <div>
+                    <span class="eyebrow">03 / Selected work</span>
+                    <h2>Work gallery</h2>
                 </div>
-                <div class="project-body">
-                    <h3>FinFlow <span class="tag-soft">FinanceAI</span></h3>
-                    <p>Personal finance management web app with an AI chat assistant for tracking spending and getting financial insights.</p>
-                    <div class="tags"><span>Laravel</span><span>MySQL</span><span>AI Chat</span></div>
-                    <div class="project-links">
-                        <a href="#" class="link">Live demo →</a>
-                        <a href="#" class="link">Source →</a>
-                    </div>
-                </div>
-            </article>
+                <a href="https://github.com/dods112" target="_blank" rel="noopener" class="btn outline">View more on GitHub ↗</a>
+            </div>
 
-            <article class="project-card car-item">
-                <div class="project-img">
-                    <img src="admin.png" alt="Brewhouse admin dashboard" loading="lazy">
-                </div>
-                <div class="project-body">
-                    <h3>Brewhouse</h3>
-                    <p>Coffee shop admin system with sales analytics, inventory views, and Artisan tooling for repeatable data tasks.</p>
-                    <div class="tags"><span>Laravel</span><span>Analytics</span><span>Artisan</span></div>
-                    <div class="project-links">
-                        <a href="#" class="link">Live demo →</a>
-                        <a href="#" class="link">Source →</a>
-                    </div>
-                </div>
-            </article>
+            <div class="carousel">
+                <div class="car-stage" id="carStage">
+                    <article class="project-card car-item">
+                        <div class="project-img">
+                            <img src="ai_chat.png" alt="FinFlow AI chat interface" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>FinFlow <span class="tag-soft">FinanceAI</span></h3>
+                            <p>Personal finance management web app with an AI chat assistant for tracking spending and getting financial insights.</p>
+                            <div class="tags"><span>Laravel</span><span>MySQL</span><span>AI Chat</span></div>
+                            <div class="project-links">
+                                <a href="#" class="link">Live demo →</a>
+                                <a href="#" class="link">Source →</a>
+                            </div>
+                        </div>
+                    </article>
 
-            <article class="project-card car-item">
-                <div class="project-img">
-                    <img src="transaction.png" alt="Attendance system dashboard" loading="lazy">
-                </div>
-                <div class="project-body">
-                    <h3>Attendance System</h3>
-                    <p>RFID-based student attendance with Arduino hardware, a Flask backend, and a SQLite-powered live dashboard.</p>
-                    <div class="tags"><span>Arduino</span><span>Flask</span><span>SQLite</span></div>
-                    <div class="project-links">
-                        <a href="#" class="link">Source →</a>
-                    </div>
-                </div>
-            </article>
-        </div>
+                    <article class="project-card car-item">
+                        <div class="project-img">
+                            <img src="admin.png" alt="Brewhouse admin dashboard" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Brewhouse</h3>
+                            <p>Coffee shop admin system with sales analytics, inventory views, and Artisan tooling for repeatable data tasks.</p>
+                            <div class="tags"><span>Laravel</span><span>Analytics</span><span>Artisan</span></div>
+                            <div class="project-links">
+                                <a href="#" class="link">Live demo →</a>
+                                <a href="#" class="link">Source →</a>
+                            </div>
+                        </div>
+                    </article>
 
-    </div>
-
-    <div class="car-dots" id="carDots"></div>
-</section>
-
-        <!-- ========== CONTACT ========== -->
-<section id="contact" class="section contact">
-    <div class="contact-wrap">
-        <div class="contact-left reveal">
-            <span class="eyebrow">04 / Get in touch</span>
-            <h2 class="contact-big">Let's<br>work<br>together.</h2>
-            <p class="lead">Looking for the next problem worth solving? I'm open to web systems, dashboards, and AI-integrated projects.</p>
-            <a href="Merl_Rex_Resume.pdf" download class="btn primary pill">Download resume →</a>
-        </div>
-
-        <div class="contact-right">
-            <div class="info-stack">
-                <a href="mailto:dodsdolohan2@gmail.com" class="info-card reveal">
-                    <span class="info-icon">✉</span>
-                    <div><span class="label">Email</span><strong>dodsdolohan2@gmail.com</strong></div>
-                </a>
-                <a href="https://github.com/dods112" target="_blank" rel="noopener" class="info-card reveal">
-                    <span class="info-icon">⌥</span>
-                    <div><span class="label">GitHub</span><strong>github.com/dods112</strong></div>
-                </a>
-                <a href="https://www.linkedin.com/in/dods-dolohan2-972303411/" target="_blank" rel="noopener" class="info-card reveal">
-                    <span class="info-icon">in</span>
-                    <div><span class="label">LinkedIn</span><strong>dods-dolohan2</strong></div>
-                </a>
-                <a href="tel:+639660737202" class="info-card reveal">
-                    <span class="info-icon">☎</span>
-                    <div><span class="label">Phone</span><strong>+63 966 073 7202</strong></div>
-                </a>
-                <div class="info-card reveal">
-                    <span class="info-icon">⌖</span>
-                    <div><span class="label">Location</span><strong>Bayugan City, Caraga, Philippines</strong></div>
+                    <article class="project-card car-item">
+                        <div class="project-img">
+                            <img src="transaction.png" alt="Attendance system dashboard" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Attendance System</h3>
+                            <p>RFID-based student attendance with Arduino hardware, a Flask backend, and a SQLite-powered live dashboard.</p>
+                            <div class="tags"><span>Arduino</span><span>Flask</span><span>SQLite</span></div>
+                            <div class="project-links">
+                                <a href="#" class="link">Source →</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
 
-        </div>
-    </div>
-</section>
+            <div class="car-dots" id="carDots"></div>
+        </section>
+
+        <!-- ========== CONTACT ========== -->
+        <section id="contact" class="section contact">
+            <div class="contact-wrap">
+                <div class="contact-left reveal">
+                    <span class="eyebrow">04 / Get in touch</span>
+                    <h2 class="contact-big">Let's<br>work<br>together.</h2>
+                    <p class="lead">Looking for the next problem worth solving? I'm open to web systems, dashboards, and AI-integrated projects.</p>
+                    <a href="Merl_Rex_Resume.pdf" download class="btn primary pill">Download resume →</a>
+                </div>
+
+                <div class="contact-right">
+                    <div class="info-stack">
+                        <a href="mailto:dodsdolohan2@gmail.com" class="info-card reveal">
+                            <span class="info-icon">✉</span>
+                            <div><span class="label">Email</span><strong>dodsdolohan2@gmail.com</strong></div>
+                        </a>
+                        <a href="https://github.com/dods112" target="_blank" rel="noopener" class="info-card reveal">
+                            <span class="info-icon">⌥</span>
+                            <div><span class="label">GitHub</span><strong>github.com/dods112</strong></div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dods-dolohan2-972303411/" target="_blank" rel="noopener" class="info-card reveal">
+                            <span class="info-icon">in</span>
+                            <div><span class="label">LinkedIn</span><strong>dods-dolohan2</strong></div>
+                        </a>
+                        <a href="tel:+639660737202" class="info-card reveal">
+                            <span class="info-icon">☎</span>
+                            <div><span class="label">Phone</span><strong>+63 966 073 7202</strong></div>
+                        </a>
+                        <div class="info-card reveal">
+                            <span class="info-icon">⌖</span>
+                            <div><span class="label">Location</span><strong>Bayugan City, Caraga, Philippines</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <p>© <span id="year"></span> Merl Rex N. Dolohan. All rights reserved.</p>
     </footer>
 
+    <!-- ========== HIRE ME POPUP ========== -->
+    <div class="modal" id="hireModal" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="hireTitle">
+            <button type="button" class="modal-close" id="hireClose" aria-label="Close">×</button>
+            <span class="eyebrow">Hire me</span>
+            <h3 id="hireTitle">Send me a message</h3>
+
+            <form class="modal-form" action="https://formspree.io/f/xlgzlvkr" method="POST">
+                <div class="form-row">
+                    <div class="field">
+                        <label for="mName">Full name</label>
+                        <input type="text" id="mName" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="field">
+                        <label for="mEmail">Email address</label>
+                        <input type="email" id="mEmail" name="email" placeholder="Your email address" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="mSubject">Project subject</label>
+                    <input type="text" id="mSubject" name="subject" placeholder="Project subject" required>
+                </div>
+                <div class="field">
+                    <label for="mMessage">Message</label>
+                    <textarea id="mMessage" name="message" rows="4" placeholder="Tell me about your project, timeline, and goals..." required></textarea>
+                </div>
+                <button type="submit" class="btn primary send-btn">Send message →</button>
+            </form>
+        </div>
+    </div>
+
     <script>
-// Year
-document.getElementById('year').textContent = new Date().getFullYear();
+    (() => {
+        const $ = (s) => document.querySelector(s);
+        const root = document.documentElement;
+        const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const desktop = matchMedia('(min-width: 769px) and (hover: hover) and (pointer: fine)').matches;
 
-const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const root = document.documentElement;
+        // ---------- Basics ----------
+        $('#year').textContent = new Date().getFullYear();
+        requestAnimationFrame(() => document.body.classList.add('loaded'));
+        if (localStorage.getItem('theme')) root.setAttribute('data-theme', localStorage.getItem('theme'));
 
-requestAnimationFrame(() => document.body.classList.add('loaded'));
-
-// ---------- Theme toggle ----------
-const themeBtn = document.getElementById('themeToggle');
-if (localStorage.getItem('theme')) root.setAttribute('data-theme', localStorage.getItem('theme'));
-themeBtn.addEventListener('click', () => {
-    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    const apply = () => {
-        root.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-    };
-    if (!document.startViewTransition || reduceMotion) {
-        root.classList.add('theme-fade');
-        apply();
-        setTimeout(() => root.classList.remove('theme-fade'), 700);
-        return;
-    }
-    const r = themeBtn.getBoundingClientRect();
-    const x = r.left + r.width / 2;
-    const y = r.top + r.height / 2;
-    const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
-    const t = document.startViewTransition(apply);
-    t.ready.then(() => {
-        root.animate(
-            { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
-            { duration: 700, easing: 'cubic-bezier(0.2, 0.7, 0.2, 1)', pseudoElement: '::view-transition-new(root)' }
-        );
-    });
-});
-
-// ---------- Mobile menu ----------
-const menuBtn = document.getElementById('menuBtn');
-const navLinks = document.getElementById('navLinks');
-menuBtn.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    menuBtn.classList.toggle('active', open);
-    menuBtn.setAttribute('aria-expanded', open);
-});
-navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    menuBtn.classList.remove('active');
-}));
-
-// ---------- Scroll reveal ----------
-const revealObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-        if (e.isIntersecting) {
-            e.target.classList.add('visible');
-            revealObs.unobserve(e.target);
-        }
-    });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach((el, i) => {
-    el.style.transitionDelay = (i % 4) * 90 + 'ms';
-    revealObs.observe(el);
-});
-
-// ---------- Counters ----------
-const countObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-        if (!e.isIntersecting) return;
-        const el = e.target;
-        const target = +el.dataset.count;
-        const start = performance.now();
-        const tick = (now) => {
-            const p = Math.min((now - start) / 1400, 1);
-            el.textContent = Math.floor(p * target);
-            if (p < 1) requestAnimationFrame(tick);
-        };
-        requestAnimationFrame(tick);
-        countObs.unobserve(el);
-    });
-}, { threshold: 0.5 });
-document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
-
-// ---------- 3D tilt (mouse only) ----------
-const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-if (fine && !reduceMotion) {
-    document.querySelectorAll('[data-tilt]').forEach(card => {
-        card.addEventListener('mousemove', e => {
-            const r = card.getBoundingClientRect();
-            const x = (e.clientX - r.left) / r.width;
-            const y = (e.clientY - r.top) / r.height;
-            card.style.transform = `perspective(900px) rotateX(${(0.5 - y) * 8}deg) rotateY(${(x - 0.5) * 8}deg) translateY(-6px)`;
-            card.style.setProperty('--mx', x * 100 + '%');
-            card.style.setProperty('--my', y * 100 + '%');
-        });
-        card.addEventListener('mouseleave', () => card.style.transform = '');
-    });
+        // ---------- Welcome screen: removed after the intro, never blocks clicks ----------
+       // ---------- Welcome screen: removed after the intro, then the hero animates in ----------
+const welcome = $('#welcome');
+const startHero = () => document.body.classList.add('hero-go');
+if (reduce) {
+    welcome.remove();
+    startHero();
+} else {
+    welcome.style.pointerEvents = 'none';
+    setTimeout(() => {
+        welcome.remove();
+        startHero();
+    }, 2800);
 }
 
-// ---------- Project carousel ----------
-(() => {
-    const items = [...document.querySelectorAll('.car-item')];
-    const dots = document.getElementById('carDots');
-    const stage = document.getElementById('carStage');
-    let idx = 0;
-    let startX = 0, dragging = false, moved = false;
-
-    items.forEach((_, i) => {
-        const b = document.createElement('button');
-        b.setAttribute('aria-label', 'Project ' + (i + 1));
-        b.addEventListener('click', () => go(i));
-        dots.appendChild(b);
-    });
-
-    function render() {
-        const n = items.length;
-        items.forEach((el, i) => {
-            el.classList.remove('is-active', 'is-prev', 'is-next');
-            const d = (i - idx + n) % n;
-            if (d === 0) el.classList.add('is-active');
-            else if (d === 1) el.classList.add('is-next');
-            else if (d === n - 1) el.classList.add('is-prev');
+        // ---------- Theme toggle ----------
+        $('#themeToggle').addEventListener('click', () => {
+            const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
         });
-        [...dots.children].forEach((b, i) => b.classList.toggle('on', i === idx));
-    }
 
-    function go(i) {
-        idx = (i + items.length) % items.length;
-        render();
-    }
+        // ---------- Mobile menu ----------
+        const navLinks = $('#navLinks');
+        const menuBtn = $('#menuBtn');
+        menuBtn.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            menuBtn.classList.toggle('active', open);
+            menuBtn.setAttribute('aria-expanded', open);
+        });
 
-    stage.addEventListener('pointerdown', e => {
-        dragging = true;
-        moved = false;
-        startX = e.clientX;
-        stage.setPointerCapture(e.pointerId);
-    });
-    stage.addEventListener('pointermove', e => {
-        if (dragging && Math.abs(e.clientX - startX) > 8) moved = true;
-    });
-    stage.addEventListener('pointerup', e => {
-        if (!dragging) return;
-        dragging = false;
-        const dx = e.clientX - startX;
-        if (Math.abs(dx) > 40) {
-            go(idx + (dx < 0 ? 1 : -1));
-        } else if (!moved) {
-            const card = e.target.closest('.car-item');
-            if (card && !card.classList.contains('is-active')) go(items.indexOf(card));
+        // ---------- One click handler for every in-page link ----------
+        const sectionOf = (el) => el.closest('section, footer') || el;
+        const scrollToEl = (el) => {
+            const top = sectionOf(el).getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({ top, behavior: 'auto' });
+        };
+
+        document.addEventListener('click', (e) => {
+            const a = e.target.closest('a[href^="#"]');
+            if (!a || a.getAttribute('href').length < 2) return;
+            const target = document.querySelector(a.getAttribute('href'));
+            if (!target) return;
+            e.preventDefault();
+            scrollToEl(target);
+            navLinks.classList.remove('open');
+            menuBtn.classList.remove('active');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        });
+
+        // ---------- Desktop only: wheel and keys move one section ----------
+        if (desktop) {
+            const pages = [...document.querySelectorAll('.hero2, main > section, .footer')];
+            let locked = false;
+
+            const currentIndex = () => {
+                const mid = window.pageYOffset + window.innerHeight / 2;
+                let idx = 0;
+                pages.forEach((p, i) => {
+                    if (p.getBoundingClientRect().top + window.pageYOffset <= mid) idx = i;
+                });
+                return idx;
+            };
+
+            const step = (dir) => {
+                if (locked) return;
+                const now = currentIndex();
+                const next = Math.max(0, Math.min(pages.length - 1, now + dir));
+                if (next === now) return;
+                scrollToEl(pages[next]);
+                locked = true;
+                setTimeout(() => { locked = false; }, 450);
+            };
+
+            const inField = (el) => el.closest && el.closest('textarea, select, input, .carousel, .modal');
+
+            window.addEventListener('wheel', (e) => {
+                if (inField(e.target)) return;
+                e.preventDefault();
+                if (Math.abs(e.deltaY) > 5) step(e.deltaY > 0 ? 1 : -1);
+            }, { passive: false });
+
+            window.addEventListener('keydown', (e) => {
+                if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
+                if (['ArrowDown', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); step(1); }
+                if (['ArrowUp', 'PageUp'].includes(e.key)) { e.preventDefault(); step(-1); }
+            });
         }
-    });
-    stage.addEventListener('pointercancel', () => { dragging = false; });
 
-    render();
-})();
+        // ---------- Hire Me popup ----------
+        const modal = $('#hireModal');
+        const openModal = () => {
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden', 'false');
+            setTimeout(() => $('#mName').focus(), 150);
+        };
+        const closeModal = () => {
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+        };
+        $('#hireBtn').addEventListener('click', openModal);
+        $('#hireClose').addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
-// ---------- Page-by-page (desktop only, phones scroll normally) ----------
-(() => {
-    const desktop = window.matchMedia('(min-width: 769px) and (hover: hover) and (pointer: fine)').matches;
-    if (!desktop) return;
-
-    const pages = Array.from(document.querySelectorAll('.intro, main > section, .footer'));
-    let current = 0;
-    let busy = false;
-
-    const syncCurrent = () => {
-        const mid = window.pageYOffset + window.innerHeight / 2;
-        pages.forEach((p, i) => {
-            const top = p.getBoundingClientRect().top + window.pageYOffset;
-            if (top <= mid) current = i;
+        // ---------- Scroll reveal ----------
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach((e) => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    revealObs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach((el, i) => {
+            el.style.transitionDelay = (i % 4) * 90 + 'ms';
+            revealObs.observe(el);
         });
-    };
 
-    const jumpTo = (index) => {
-        index = Math.max(0, Math.min(pages.length - 1, index));
-        current = index;
-        const top = pages[index].getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({ top, behavior: 'auto' });
-    };
+        // ---------- Counters ----------
+        const countObs = new IntersectionObserver((entries) => {
+            entries.forEach((e) => {
+                if (!e.isIntersecting) return;
+                const el = e.target;
+                const target = +el.dataset.count;
+                const start = performance.now();
+                const tick = (now) => {
+                    const p = Math.min((now - start) / 1400, 1);
+                    el.textContent = Math.floor(p * target);
+                    if (p < 1) requestAnimationFrame(tick);
+                };
+                requestAnimationFrame(tick);
+                countObs.unobserve(el);
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('[data-count]').forEach((el) => countObs.observe(el));
 
-    const step = (dir) => {
-        if (busy) return;
-        syncCurrent();
-        const next = current + dir;
-        if (next < 0 || next >= pages.length) return;
-        jumpTo(next);
-        busy = true;
-        setTimeout(() => { busy = false; }, 400);
-    };
+        // ---------- Project carousel (drag, swipe, dots, click side cards) ----------
+        const items = [...document.querySelectorAll('.car-item')];
+        const dots = $('#carDots');
+        const stage = $('#carStage');
+        let idx = 0, startX = 0, dragging = false, moved = false;
 
-    const isInput = (el) => el && el.closest && el.closest('textarea, select, input, .carousel');
+        items.forEach((_, i) => {
+            const b = document.createElement('button');
+            b.setAttribute('aria-label', 'Project ' + (i + 1));
+            b.addEventListener('click', () => go(i));
+            dots.appendChild(b);
+        });
 
-    window.addEventListener('wheel', (e) => {
-        if (isInput(e.target)) return;
-        e.preventDefault();
-        if (Math.abs(e.deltaY) > 5) step(e.deltaY > 0 ? 1 : -1);
-    }, { passive: false });
+        const render = () => {
+            const n = items.length;
+            items.forEach((el, i) => {
+                el.classList.remove('is-active', 'is-prev', 'is-next');
+                const d = (i - idx + n) % n;
+                if (d === 0) el.classList.add('is-active');
+                else if (d === 1) el.classList.add('is-next');
+                else if (d === n - 1) el.classList.add('is-prev');
+            });
+            [...dots.children].forEach((b, i) => b.classList.toggle('on', i === idx));
+        };
+        const go = (i) => { idx = (i + items.length) % items.length; render(); };
 
-    window.addEventListener('keydown', (e) => {
-        if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
-        if (['ArrowDown', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); step(1); }
-        if (['ArrowUp', 'PageUp'].includes(e.key)) { e.preventDefault(); step(-1); }
-    });
-
-    document.addEventListener('click', (e) => {
-        const link = e.target.closest('a[href^="#"]');
-        if (!link) return;
-        const target = document.getElementById(link.getAttribute('href').slice(1));
-        if (!target) return;
-        e.preventDefault();
-        const idx = pages.indexOf(target.closest('section, footer') || target);
-        if (idx !== -1) jumpTo(idx);
-    });
-})();
-
-// ---------- Hire Me popup ----------
-(() => {
-    const modal = document.getElementById('hireModal');
-    const openBtn = document.getElementById('hireBtn');
-    const closeBtn = document.getElementById('hireClose');
-
-    const open = () => {
-        modal.classList.add('open');
-        modal.setAttribute('aria-hidden', 'false');
-        setTimeout(() => document.getElementById('mName').focus(), 150);
-    };
-    const close = () => {
-        modal.classList.remove('open');
-        modal.setAttribute('aria-hidden', 'true');
-    };
-
-    openBtn.addEventListener('click', open);
-    closeBtn.addEventListener('click', close);
-    modal.addEventListener('click', e => { if (e.target === modal) close(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
-})();
-</script>
-
-<!-- ========== HIRE ME POPUP ========== -->
-<div class="modal" id="hireModal" aria-hidden="true">
-    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="hireTitle">
-        <button type="button" class="modal-close" id="hireClose" aria-label="Close">×</button>
-        <span class="eyebrow">Hire me</span>
-        <h3 id="hireTitle">Send me a message</h3>
-
-        <form class="modal-form" action="https://formspree.io/f/xlgzlvkr" method="POST">
-            <div class="form-row">
-                <div class="field">
-                    <label for="mName">Full name</label>
-                    <input type="text" id="mName" name="name" placeholder="Your full name" required>
-                </div>
-                <div class="field">
-                    <label for="mEmail">Email address</label>
-                    <input type="email" id="mEmail" name="email" placeholder="Your email address" required>
-                </div>
-            </div>
-            <div class="field">
-                <label for="mSubject">Project subject</label>
-                <input type="text" id="mSubject" name="subject" placeholder="Project subject" required>
-            </div>
-            <div class="field">
-                <label for="mMessage">Message</label>
-                <textarea id="mMessage" name="message" rows="4" placeholder="Tell me about your project, timeline, and goals..." required></textarea>
-            </div>
-            <button type="submit" class="btn primary send-btn">Send message →</button>
-        </form>
-    </div>
-</div>
-<script>
-document.querySelectorAll('.nav-links a, .brand').forEach(link => {
-    link.addEventListener('click', e => {
-        const href = link.getAttribute('href');
-        if (!href || !href.startsWith('#')) return;
-        const target = document.querySelector(href);
-        if (!target) return;
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'auto', block: 'start' });
-    });
-});
-</script>
-
-<script>
-(() => {
-    const el = document.getElementById('welcome');
-    if (!el) return;
-
-    const saved = localStorage.getItem('theme');
-    if (saved) document.documentElement.setAttribute('data-theme', saved);
-
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { el.remove(); return; }
-
-    // Split the name into letters for a staggered reveal
-    const name = el.querySelector('.welcome-name');
-    const text = name.textContent;
-    name.setAttribute('aria-label', text);
-    name.textContent = '';
-    [...text].forEach((ch, i) => {
-        const s = document.createElement('span');
-        s.className = 'wl';
-        s.style.setProperty('--i', i);
-        s.textContent = ch === ' ' ? '\u00a0' : ch;
-        name.appendChild(s);
-    });
-
-    // Counter 000 to 100
-    const count = el.querySelector('.w-count');
-    const start = performance.now() + 300;
-    const tick = (now) => {
-        const p = Math.min(Math.max((now - start) / 1800, 0), 1);
-        count.textContent = String(Math.floor(p * 100)).padStart(3, '0');
-        if (p < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-
-    // Circle reveal to the site
-    setTimeout(() => {
-        const anim = el.animate(
-            { clipPath: ['circle(150% at 50% 50%)', 'circle(0px at 50% 50%)'] },
-            { duration: 900, easing: 'cubic-bezier(0.7, 0, 0.2, 1)', fill: 'forwards' }
-        );
-        anim.onfinish = () => el.remove();
-    }, 2700);
-})();
-</script>
-</script>
-<script>
-// Hire Me popup (standalone, uses event delegation)
-document.addEventListener('click', (e) => {
-    const modal = document.getElementById('hireModal');
-    if (!modal) return;
-
-    if (e.target.closest('#hireBtn')) {
-        e.preventDefault();
-        modal.classList.add('open');
-        modal.setAttribute('aria-hidden', 'false');
-        setTimeout(() => {
-            const first = document.getElementById('mName');
-            if (first) first.focus();
-        }, 150);
-        return;
-    }
-
-    if (e.target.closest('#hireClose') || e.target === modal) {
-        modal.classList.remove('open');
-        modal.setAttribute('aria-hidden', 'true');
-    }
-});
-
-document.addEventListener('keydown', (e) => {
-    if (e.key !== 'Escape') return;
-    const modal = document.getElementById('hireModal');
-    if (modal) {
-        modal.classList.remove('open');
-        modal.setAttribute('aria-hidden', 'true');
-    }
-});
-
-// Safety net: if the welcome screen ever gets stuck, remove it so clicks work
-setTimeout(() => {
-    const w = document.getElementById('welcome');
-    if (w) w.remove();
-}, 5000);
-</script>
+        stage.addEventListener('pointerdown', (e) => {
+            dragging = true;
+            moved = false;
+            startX = e.clientX;
+            stage.setPointerCapture(e.pointerId);
+        });
+        stage.addEventListener('pointermove', (e) => {
+            if (dragging && Math.abs(e.clientX - startX) > 8) moved = true;
+        });
+        stage.addEventListener('pointerup', (e) => {
+            if (!dragging) return;
+            dragging = false;
+            const dx = e.clientX - startX;
+            if (Math.abs(dx) > 40) {
+                go(idx + (dx < 0 ? 1 : -1));
+            } else if (!moved) {
+                const card = e.target.closest('.car-item');
+                if (card && !card.classList.contains('is-active')) go(items.indexOf(card));
+            }
+        });
+        stage.addEventListener('pointercancel', () => { dragging = false; });
+        render();
+    })();
+    </script>
 </body>
+
+<script>
+// Always start at the top and never restore an old scroll position
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+});
+window.addEventListener('pageshow', (e) => {
+    if (e.persisted) window.scrollTo(0, 0);
+});
+</script>
 </html>
