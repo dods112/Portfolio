@@ -1680,3 +1680,30 @@ html.theme-fade,
 html.theme-fade * {
     transition: background-color 0.6s ease, color 0.6s ease, border-color 0.6s ease !important;
 }
+
+/* ========== MOBILE HERO: PORTRAIT ABOVE, TEXT BELOW ========== */
+@media (max-width: 768px) {
+  .hero2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Portrait first */
+  .hero2-photo {
+    order: 1;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  /* Text block second */
+  .hero2-content {
+    order: 2;
+    margin-top: 28px;
+  }
+
+  /* Outlined background name sits behind the portrait */
+  .hero2-bg-name {
+    top: 30%;
+    order: 0;
+  }
+}
